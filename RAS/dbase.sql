@@ -1,0 +1,120 @@
+create database ResourceAllocationSystem;
+use ResourceAllocationSystem;
+/*student table*/
+create table student(username varchar(30)  primary key,password varchar(25) not null);
+insert into student values("madhulica@ssn.edu.in","12345");
+insert into student values("sarah@ssn.edu.in","67890");
+insert into student values("nuzair@ssn.edu.in","09876");
+insert into student values("priya@ssn.edu.in","54321");
+insert into student values("shreya@ssn.edu.in","13579");
+insert into student values("shiva@ssn.edu.in","13579");
+insert into student values("padmesh@ssn.edu.in","13579");
+insert into student values("pravin@ssn.edu.in","13579");
+insert into student values("raghavesh@ssn.edu.in","13579");
+insert into student values("aymen@ssn.edu.in","13579");
+insert into student values("salibindla@ssn.edu.in","13579");
+insert into student values("sanyog@ssn.edu.in","13579");
+insert into student values("partheban@ssn.edu.in","13579");
+insert into student values("bhavya@ssn.edu.in","13579");
+insert into student values("sreeja@ssn.edu.in","13579");
+insert into student values("niranjan@ssn.edu.in","13579");
+insert into student values("ramya@ssn.edu.in","13579");
+insert into student values("varsini@ssn.edu.in","13579");
+insert into student values("nithin@ssn.edu.in","13579");
+insert into student values("thushitha@ssn.edu.in","13579");
+insert into student values("keerthana@ssn.edu.in","13579");
+insert into student values("samyuktha@ssn.edu.in","13579");
+
+select * from student;
+/*faculty table*/
+create table faculty(username varchar(30) primary key,password varchar(25) not null);
+insert into faculty values("teacher1@ssn.edu.in","12345");
+insert into faculty values("teacher2@ssn.edu.in","67890");
+insert into faculty values("teacher3@ssn.edu.in","09876");
+insert into faculty values("teacher4@ssn.edu.in","54321");
+insert into faculty values("teacher5@ssn.edu.in","24680");
+insert into faculty values("teacher6@ssn.edu.in","24680");
+insert into faculty values("teacher7@ssn.edu.in","24680");
+insert into faculty values("teacher8@ssn.edu.in","24680");
+insert into faculty values("teacher9@ssn.edu.in","24680");
+insert into faculty values("teacher10@ssn.edu.in","24680");
+insert into faculty values("teacher11@ssn.edu.in","24680");
+insert into faculty values("teacher12@ssn.edu.in","24680");
+insert into faculty values("teacher13@ssn.edu.in","24680");
+insert into faculty values("teacher14@ssn.edu.in","24680");
+insert into faculty values("teacher15@ssn.edu.in","24680");
+insert into faculty values("teacher16@ssn.edu.in","24680");
+insert into faculty values("teacher17@ssn.edu.in","24680");
+select * from faculty;
+/*admin*/
+create table adminis(username varchar(30) primary key,password varchar(25) not null);
+insert into adminis values("admin@ssn.edu.in","admin");
+select * from adminis;
+/*CLASSROOM*/
+create table classroom(cname varchar(10) primary key,capacity int not null,availability varchar(3) not null);
+insert into classroom values("LH40",70,"yes");
+insert into classroom values("LH41",70,"yes");
+insert into classroom values("LH42",60,"yes");
+insert into classroom values("LH43",20,"yes");
+insert into classroom values("LH44",20,"yes");
+insert into classroom values("LH45",70,"yes");
+insert into classroom values("LH46",70,"yes");
+insert into classroom values("LH47",60,"yes");
+insert into classroom values("LH48",20,"yes");
+insert into classroom values("LH49",20,"yes");
+insert into classroom values("LH50",20,"yes");
+insert into classroom values("LH51",20,"yes");
+insert into classroom values("LH52",20,"yes");
+insert into classroom values("LH53",20,"yes");
+insert into classroom values("LH54",20,"no");
+insert into classroom values("LH55",20,"no");
+insert into classroom values("LH56",20,"yes");
+insert into classroom values("LH57",20,"no");
+insert into classroom values("LH58",20,"no");
+insert into classroom values("LH59",20,"no");
+insert into classroom values("LH60",20,"no");
+
+select * from classroom;
+/*LAB*/
+create table lab(lname varchar(20) primary key,capacity int not null,availability varchar(3) not null);
+insert into lab values("LAB1",40,"yes");
+insert into lab values("LAB2",40,"yes");
+insert into lab values("LAB3",40,"yes");
+insert into lab values("LAB4",20,"yes");
+insert into lab values("LAB5",20,"yes");
+insert into lab values("LAB6",20,"yes");
+insert into lab values("LAB7",40,"no");
+insert into lab values("LAB8",40,"no");
+insert into lab values("LAB9",40,"no");
+insert into lab values("LAB10",20,"no");
+select * from lab;
+/*SEMINAR HALL*/
+create table seminarhall(hname varchar(20) primary key,capacity int not null,availability varchar(3) not null);
+insert into seminarhall values("Hall1",100,"yes");
+insert into seminarhall values("Hall2",50,"yes");
+insert into seminarhall values("Hall3",150,"no");
+select * from seminarhall;
+/*LAPTOP*/
+create table laptop(lapno varchar(10) primary key,availability varchar(3) not null);
+insert into laptop values("laptop1","yes");
+insert into laptop values("laptop2","yes");
+insert into laptop values("laptop3","yes");
+insert into laptop values("laptop4","no");
+insert into laptop values("laptop5","no");
+select * from laptop;
+/*MIC*/
+create table mic(micno varchar(10) primary key,availability varchar(3) not null);
+insert into mic values("mic1","yes");
+insert into mic values("mic2","yes");
+insert into mic values("mic3","no");
+insert into mic values("mic4","no");
+insert into mic values("mic5","no");
+select * from mic;
+/*PROJECTOR*/
+create table projector(projno varchar(10) primary key,availability varchar(3) not null);
+insert into projector values("projector1","yes");
+insert into projector values("projector2","yes");
+insert into projector values("projector3","yes");
+insert into projector values("projector4","yes");
+insert into projector values("projector5","no");
+select * from projector;

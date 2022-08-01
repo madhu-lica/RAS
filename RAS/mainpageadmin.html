@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Roboto&family=Square+Peg&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=McLaren|Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-family: 'Roboto', sans-serif;
+  }
+  body {
+
+    background: #eee;
+    padding: 0 16px;
+  }
+  
+  header {
+    background-color: #DBDFFD;
+    margin: auto -16px;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  header h1 {
+    color: #fff;
+    font-family: "McLaren", cursive;
+    font-weight: 200;
+  }
+  
+  footer {
+     position: fixed;
+  bottom: 0px;
+text-align:center;
+  margin-right: auto;
+  margin-left: auto;
+    width: 100%;
+    height: 2.5rem;
+  }
+  
+  footer p {
+    color: #ccc;
+  }
+  .note {
+    text-align: center;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 70px;
+    width: 540px;
+    margin-bottom:10%;
+    margin-left: 30%;
+    margin-right: 30%;
+    float: left;
+    
+  }
+  .note h1 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+  }
+  .note p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  .tit{
+    font-family: 'Roboto', sans-serif;
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+  }
+  input{
+      padding-top: 7px;
+      padding-bottom: 7px;      
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 5px;
+      margin: 10px;
+      font-size: 20px;
+
+  }
+  input:hover{
+      border-radius: 10px;
+      box-shadow: 1px 3px #888888;
+  }
+  #submit{
+      background-color: #DBDFFD;
+      border: rgb(112, 110, 110);
+      color: rgb(74, 73, 73);
+  }
+label{
+font-size:1.1em;
+}
+.hi{
+    text-align: right;
+}
+.submit{
+      background-color: #DBDFFD;
+      border: rgb(112, 110, 110);
+      color: rgb(74, 73, 73);
+      border-radius: 5px;
+  }
+  .submit:hover{
+    border-radius: 10px;
+      box-shadow: 1px 3px #888888;
+  }
+.atag{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: darkslategray;
+  font-size: 30px;
+}
+.atag1{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: darkslategray;
+  font-size: 20px;
+}
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+<header>
+      <img 
+      src="https://www.ssn.edu.in/wp-content/uploads/2020/06/SSN-Institutions-1.png" 
+      alt="SSN"  width="90" height="40" style="float:left;padding-bottom: 5px;"
+      />
+      <h3 class="hi">Hi, Admin</h3>  
+    </header>
+<h1 class="tit">Resource Allocation System</h1>
+<div class="note">
+      <button class="submit"><a href="viewresource.html" class="atag">View Resource</a></button><br/><br/>
+      <details>
+        <summary style="font-weight:bold"><button class="submit atag">Edit Resource</button></summary>
+            <form action="">
+                <button class="submit atag1">Add Resource</button><br/>
+                <button class="submit atag1">Delete Resource</button><br/>
+                <button class="submit atag1">Edit Resource</button><br/>
+            </form>
+      </details >
+    </div>
+    <script src="../src/index.js" type="text/jsx"></script>
+ <footer>
+<div>
+      <p>Copyright ⓒ 2022</p>
+</div>    </footer>
+  </body>
+</html>

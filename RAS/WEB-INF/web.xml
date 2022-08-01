@@ -1,0 +1,30 @@
+<web-app>
+    <servlet>
+        <servlet-class>UserAuthenticate</servlet-class>
+        <servlet-name>UserAuthenticate</servlet-name>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserAuthenticate</servlet-name>
+        <url-pattern>/UserAuthenticate</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-class>LoadResources</servlet-class>
+        <servlet-name>LoadResources</servlet-name>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoadResources</servlet-name>
+        <url-pattern>/LoadResources</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-class>ReserveResource</servlet-class>
+        <servlet-name>ReserveResource</servlet-name>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReserveResource</servlet-name>
+        <url-pattern>/ReserveResource</url-pattern>
+    </servlet-mapping>
+
+    
+</web-app>

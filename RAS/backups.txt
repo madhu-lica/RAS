@@ -1,0 +1,44 @@
+	<input type="radio" class="radiobutton" name="resourcetype" value="classroom">
+        <label for="classroom">Classrooms</label><br><br>
+
+        <input type="radio" class="radiobutton" name="resourcetype" value="lab">
+        <label for="lab">Labs</label><br><br>
+
+        <input type="radio" class="radiobutton" name="resourcetype" value="seminarhall">
+        <label for="seminarhall">Seminar Halls</label><br><br>
+
+        <input type="radio" class="radiobutton" name="resourcetype" value="mic">
+        <label for="mic">Mics</label><br><br>
+
+        <input type="radio" class="radiobutton" name="resourcetype" value="laptop">
+        <label for="laptop">Laptops</label><br><br>
+        
+        <input type="radio" class="radiobutton" name="resourcetype" value="projector">
+        <label for="projector">Projectors</label><br><br>
+
+
+
+
+
+
+<button type="submit" name="classroom" class="submit">Classrooms</button><br><br>
+
+        <button type="submit" name="lab" class="submit">Labs</button><br><br>
+
+        <button type="submit" name="seminarhall" class="submit">Seminar Halls</button><br><br>
+
+        <button type="submit" name="mic" class="submit">Mics</button><br><br>
+
+        <button type="submit" name="projector" class="submit">Projectors</button><br><br>
+
+        <button type="submit" name="laptop" class="submit">Laptops</button>
+
+
+  else
+            {
+                out.println("<h3 style=\"text-align:center\">Invalid Detials!</h3>");
+				RequestDispatcher rd = request.getRequestDispatcher("reserveresource.html");
+				// forwarding the request to Welcome.java
+				rd.forward(request, response);
+
+            }//else
